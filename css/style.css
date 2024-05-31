@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: linear-gradient();
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  user-select: none;
+  background: rgba(227, 227, 227, 0.741);
+  overflow-x: hidden;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+a>img{
+    width: 90px;
+    height: 80px;
+}
+
+/* ----------------------------------------Navbar------------------------------ */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(227, 138, 54, 0.671));
+    align-items: center;
+    box-shadow: 0;
+    left: 0;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li,i{
+    margin: 10px 20px;
+}
+
+li{
+    color:#414141;
+    font-weight: bold;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+a>i{
+  color: orangered;
+  filter: contrast(5);
+
+}
+
+a>i:hover{
+  filter: brightness(1);
+  transition: 0.2s all ease;
+}
+
+li:hover
+{
+  color: orangered;
+  top: -0.2px;
+}
+
+
+.active
+{
+  content: "";
+  width: 80%;
+  height: 3px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  bottom: -25px;
+  color: orangered;
+}
+
+
+
+
+/* --------------------------------------------Hero------------------------- */
+
+.hero{
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(227, 138, 54, 0.671)),url(img/back.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: top 50%;
+  display: flex;
+  padding: 0px 100px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+}
+
+ h1{
+  background: linear-gradient(to bottom right,orange,orangered); 
+  color: transparent;
+  -webkit-background-clip:text;
+}
+
+.hero button{
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size:15px;
+  cursor: pointer;
+  font-weight: 800;
+  filter: contrast(0.2);
+  background: linear-gradient(to right,orange,orangered);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.2s ease;
+} 
+
+.hero button:hover{
+  filter: none;
+  color: orangered;
+}
+
+/* --------------------Features----------------------------- */
+#features{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 20px;
+}
+
+#features .fe-box {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#features .fe-box:hover {
+  box-shadow: 0px 0px 34px rgba(49, 169, 205, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+
+#features .fe-box2 {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#features .fe-box2:hover {
+  box-shadow: 0px 0px 34px rgba(150, 49, 205, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box2:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+#features .fe-box3 {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+#features .fe-box3:hover {
+  box-shadow: 0px 0px 34px rgba(98, 205, 49, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box3:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+#features .fe-box4 {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#features .fe-box4:hover {
+  box-shadow: 0px 0px 34px rgba(49, 205, 189, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box4:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+#features .fe-box5 {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#features .fe-box5:hover {
+  box-shadow: 0px 0px 34px rgba(150, 49, 205, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box5:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+#features .fe-box6 {
+  position: relative;
+  width: 180px;
+  padding: 25px 15px;
+  text-align: center;
+  margin: 15px 0px;
+  transition: 0.2s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#features .features-h6{
+  position: absolute;
+  bottom: -32px;
+  left: 0px;
+  background: linear-gradient(to right,rgb(79, 146, 255),rgb(255, 105, 105));
+  color: transparent;
+  -webkit-background-clip: text;
+  width: 100%;
+  line-height: 2;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#features .fe-box6:hover {
+  box-shadow: 0px 0px 34px rgba(205, 49, 49, 0.333);
+  cursor: pointer;
+}
+
+#features .fe-box6:hover h6{
+  transition: 0.5s;
+  bottom: -7px;
+}
+
+/* ---------------------------Products------------------ */
+
+.pro-container {
+  display: inline-block;
+  position: relative;
+  margin: 20px 10px 0px 20px;
+  border-radius: 10%;
+  max-width:300px;
+  max-height: 300x;
+  border: 2px solid rgba(0, 0, 0, 0.318);
+  transition: 0.2s;
+}
+
+.pro-container h5
+{
+  position: absolute;
+  top: 10px;
+  color: red;
+  top: 30px;
+}
+
+.pro-container i[class="fa-solid fa-indian-rupee-sign"]
+{
+  margin: 5px 5px 15px 10px;
+}
+
+.pro-container:hover
+{
+  transition: all ease 0.2s;
+  background: lightgray;
+}
+
+.pro-container img{
+  padding: 10px 10px;
+  border-radius: 10%;
+  width: 295px;
+  height: 300px;
+}
+
+#products>h4{
+  color: rgb(248, 180, 77);
+  text-align: center;
+  font-size: 40px; 
+  font-weight: 500;
+}
+
+.pro-container .des{
+  line-height: 5px;
+  margin-left: 20px;
+  line-height: 10px;
+}
+
+.des h5{
+  font-size: 15px; 
+  padding-top: 20px;
+  font-weight: 800;
+  color: rgb(59, 115, 115);
+  position: relative;
+  bottom: -10px;
+}
+
+.des h6{
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  bottom: 5px;
+
+}
+
+.pro-container i[class= "fa-solid fa-cart-shopping"]
+{
+  display: inline-block;  
+  position: absolute; 
+  background:linear-gradient( orange,red);
+  color: transparent; 
+  -webkit-background-clip: text;
+  filter: contrast(5);
+  border-radius: 20%;
+  bottom: 10px; 
+  left: 220px; 
+  padding: 8px;
+}
+
+.pro-container i[class= "fas fa-star"]
+{
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(rgb(255, 106, 52),orange);
+    color: transparent;
+   -webkit-background-clip: text;
+    margin: 2px;
+    right: 2px;
+}
+
+.pro-container i:hover{
+  filter: brightness(1);
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+.pro-container:hover{
+  box-shadow: 0px 0px 10px rgb(152, 147, 147);
+}
+
+/* ----------------------------------------Banner-------------------------------------------- */
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/banner/b2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#banner h4
+{
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+#banner button
+{
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 40px;
+  padding: 10px 30px;
+  transition: 0.2s ease all;
+}
+
+#banner button:hover
+{
+  color: white;
+  background-color: darkcyan;
+  cursor: pointer;
+}
+
+#banner span{
+  color: orangered;
+}
+
+
+.foot{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-color: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot .links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foot h4{
+  color: lightgrey;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+.foot .links a{
+  margin: 5px 0px;
+  font-weight: 300;
+  text-align: start;
+  text-decoration: none;
+  color: #949494;
+}
+
+.foot .links a:hover
+{
+  color: lightgray;
+  transition: all 0.5s ease;
+}
+
+.foot .footer
+{
+  position: absolute;
+  top: 250px;
+} 
+
+.foot .footer p
+{
+  text-align: center;
+  color: #afafaf;
+}
+
+
+/* ------------------Shop Page-------------- */
+
+
+.page-header 
+{
+  background-image: url(./img/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* ---------------------About Page----------------------- */
+
+#about-header
+{
+  background-image: url(./img/about/banner.png);
+}
+
+.about
+{
+  display: flex;
+  margin-top: 80px;
+}
+
+
+.about img
+{
+  margin-left: 50px;
+  width: 600px;
+  height: 500px;
+}
+
+.about .about-us p
+{
+  position: relative;
+  padding: 20px;
+  top: 100px;
+  color: grey;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ---------------------About Video------------------------------ */
+
+.about-video
+{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about-video video
+{
+  margin-top: 50px;
+  width: 70%;
+  height: 600px;
+}
+
+
+/* -----------------------Contact------------------------- */
+
+.contact-details
+{
+  display: flex;
+  margin: 100px 0 0 100px;
+}
+
+.contact-details .contact-info
+{
+  margin-left: 100px;
+  list-style: none;
+}
+
+.contact-details .map
+{
+  margin-left: 300px;
+  width: 80px;
+  align-items: center;
+  justify-content: right;
+  
+}
+
+
+/* --------------------Cart Items-------------------- */
+
+.cart-items
+{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  color: yellow;
+  background:rgba(255, 169, 9, 0.51);
+  align-items: center;
+  height: 100vh;
+}
+
+.cart-items h1
+{
+  font-weight: 500;
+}
+
+
+/* ------------------------Add Products Form----------------------- */
+
+.form-input
+{
+  width: 220px;
+  border: 2px solid darkcyan;
+  padding: 5px 10px;  
+  margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
